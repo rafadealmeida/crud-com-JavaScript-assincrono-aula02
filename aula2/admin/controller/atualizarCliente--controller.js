@@ -12,3 +12,17 @@ clienteService.detalhaCliente(id).then(dado=>{
     inputNome.value = dado.nome;
     inputEmail.value = dado.email;
 })
+
+
+const formulario = document.querySelector('[data-form]');
+
+formulario.addEventListener('submit',(evento)=>{
+   evento.preventDefault();
+
+   clienteService.atualizaCliente(inputNome.value,inputEmail.value,id)
+   .then(()=>{
+       window.location.href = '../telas/edicao_concluida.html'
+   })
+
+
+})
