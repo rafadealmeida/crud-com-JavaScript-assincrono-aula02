@@ -1,3 +1,5 @@
+
+
 const listaClientes = () =>  {
     return fetch(`http://localhost:3000/profile`)
     .then(resposta => {
@@ -26,7 +28,7 @@ const listaClientes = () =>  {
 }
 
 
-const criaCliente = () => {
+const criaCliente = (nome, email) => {
     return fetch (`http://localhost:3000/profile`, {
         method : 'POST',
         headers : {

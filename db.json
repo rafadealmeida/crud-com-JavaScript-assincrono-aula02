@@ -1,19 +1,19 @@
 {
-  "posts": [
+  "profile": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "nome": "felipe",
+      "email": "felipe@alura.com",
+      "id": 1
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "nome": "teste",
+      "email": "teste@email.com",
+      "id": 2
+    },
+    {
+      "nome": "samira",
+      "email": "samira@email.com",
+      "id": 3
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
